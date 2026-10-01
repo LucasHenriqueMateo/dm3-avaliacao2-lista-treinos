@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "334532225141",
+    "firebase_url": "https://devmulti3-default-rtdb.firebaseio.com",
+    "project_id": "devmulti3",
+    "storage_bucket": "devmulti3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334532225141:android:4ee5f03206860db149703c",
+        "android_client_info": {
+          "package_name": "br.edu.ifsp.dm3.lista_treinos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5Kt4-DVjoMt0H3yHWnt1raA5g-ILqyY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

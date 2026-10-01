@@ -1,5 +1,5 @@
 class Treino {
-  int? _id;
+  String? _id;
   String _exercicio;
   int _series;
   int _repeticoes;
@@ -15,7 +15,7 @@ class Treino {
     this._data,
   );
 
-  int? get id => _id;
+  String? get id => _id;
   String get exercicio => _exercicio;
   int get series => _series;
   int get repeticoes => _repeticoes;

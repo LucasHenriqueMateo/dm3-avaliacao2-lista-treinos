@@ -18,9 +18,9 @@ void main() {
   });
 
   test('Construtor withId cria treino com id definido', () {
-    final treino = Treino.withId(1, 'Agachamento', 3, 10, '06/08/2026');
+    final treino = Treino.withId('1', 'Agachamento', 3, 10, '06/08/2026');
 
-    expect(treino.id, 1);
+    expect(treino.id, '1');
     expect(treino.exercicio, 'Agachamento');
   });
 
@@ -38,10 +38,10 @@ void main() {
   });
 
   test('toMap gera um Map com todos os campos', () {
-    final treino = Treino.withId(2, 'Rosca direta', 3, 15, '06/08/2026');
+    final treino = Treino.withId('2', 'Rosca direta', 3, 15, '06/08/2026');
     final map = treino.toMap();
 
-    expect(map['id'], 2);
+    expect(map['id'], '2');
     expect(map['exercicio'], 'Rosca direta');
     expect(map['series'], 3);
     expect(map['repeticoes'], 15);
@@ -56,7 +56,7 @@ void main() {
   });
 
   test('fromMap reconstroi um Treino equivalente ao original', () {
-    final original = Treino.withId(3, 'Leg press', 4, 20, '06/08/2026');
+    final original = Treino.withId('3', 'Leg press', 4, 20, '06/08/2026');
     final reconstruido = Treino.fromMap(original.toMap());
 
     expect(reconstruido.id, original.id);
